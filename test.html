@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿te gustan las pirulas?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #mensaje {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .boton {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+        .boton:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje">¿Te gustan las pirulas?</div>
+    <button class="boton" onclick="aceptar()">Sí</button>
+    <button class="boton" onclick="aceptar()">No</button>
+
+    <script>
+        function aceptar() {
+            document.getElementById("mensaje").innerHTML = "fantastico has respondido que efectivamente te gustan las pirulas, tu respuesta se le enviara al usuario";
+        }
+    </script>
+</body>
+</html>
